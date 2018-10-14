@@ -1,0 +1,35 @@
+<%= form_for @restaurant do |f| %>
+  <div class="field">
+    <%= f.label :name, 'Enter Restaurant Name:'%>
+    <%= f.text_field :name %>
+  </div><br>
+
+  <div class="field">
+    <%= f.label :address, 'Enter Address:' %>
+    <%= f.text_field :address %>
+  </div><br>
+
+  <div class="field">
+    <%= f.label :city, 'Enter City:' %>
+    <%= f.text_field :city %>
+  </div><br>
+
+  <div class="field">
+    <%= f.label :state, 'Enter State:' %>
+    <%= f.text_field :state %>
+  </div><br>
+
+  <div class="field">
+    <%= f.label :zip, 'Enter Zip Code:' %>
+    <%= f.text_field :zip %>
+  </div><br>
+
+  <div class="field">
+    <%= f.label :description, 'Enter a Description (optional):' %>
+    <%= f.text_field :description %>
+  </div><br>
+
+  <div class="actions">
+    <%= f.submit 'Add Restaurant' %>
+  </div>
+<% end %>
